@@ -32,7 +32,7 @@
 
 .logo a {
     text-decoration: none;
-    color: #3c4a3e;
+    color: #0d0e0d;
 }
 
 .left-section {
@@ -43,7 +43,7 @@
 }
 
 .left-section img {
-    height: 50vh;
+    width: 30vw;
     border-radius: 15px 50px;
     border: solid 5px white;
     margin-left: 30px;
@@ -51,13 +51,15 @@
 
 .right-section {
     display: flex;
-    background: #7cf49a;   
+    background: #7cf49a; 
+    font-size: 1.2vw;  
 }
 
 h1 {
     text-align: center;
     align-self: center;
-    margin-right: 30px;
+    padding: 3px;
+    letter-spacing: epx;
     
 }
 

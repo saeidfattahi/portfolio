@@ -30,7 +30,7 @@
 }
 .logo a {
     text-decoration: none;
-    color: #3c4a3e;
+    color: #0d0e0d;
 }
 
 
@@ -42,8 +42,9 @@
     letter-spacing: 2px;
     color: #3c4a3e;
     font-weight: 400;
-    font-size: 3rem;
- 
+    font-size: 3.5vw;
+    padding: 5px;
+    text-align: center;
 }
 
 
@@ -57,13 +58,13 @@
 
 .link {
     display: block;
-    width: 150px;
+    width: 14vw;
     text-decoration: none;
     color: #7cf49a;
     border: 5px solid #3c4a3e;
     border-radius: 15px 50px;
     margin: 0 30px;
-    font-size: 28px;
+    font-size: 2.5vw;
     background-color: #3c4a3e;
     padding: 10px;
     text-align: center;
