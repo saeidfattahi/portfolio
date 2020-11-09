@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #7cf49a;
+    font-family: "GT Walsheim Pro Light"
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    grid-template-areas: 
+    "logo"
+    "objectives"
+    "navbar"
+    "footer";
+}
+
+.logo {
+    grid-area: logo;
+    align-self: start;
+    justify-self: start;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+     
+}
+.logo a {
+    text-decoration: none;
+    color: #3c4a3e;
+}
+
+
+.objectives {
+    grid-area: objectives;
+    align-self: center;
+    justify-self: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #3c4a3e;
+    font-weight: 400;
+    font-size: 3rem;
+ 
+}
+
+
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.link {
+    display: block;
+    width: 150px;
+    text-decoration: none;
+    color: #7cf49a;
+    border: 5px solid #3c4a3e;
+    border-radius: 15px 50px;
+    margin: 0 30px;
+    font-size: 28px;
+    background-color: #3c4a3e;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.footer {
+    grid-area: footer;
+    align-self: end;
+    justify-self: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #3c4a3e;
+}
+
+
+
+
