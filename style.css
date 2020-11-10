@@ -1,86 +1,189 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: #7cf49a;
-    font-family: "GT Walsheim Pro Light"
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "GT Walsheim Pro Light";
+  background: #7cf49a;
 }
 
+/* Logo Styling*/
+.logo {
+  grid-area: logo;
+  align-self: start;
+  justify-self: start;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.logo a {
+  text-decoration: none;
+  color: #0d0e0d;
+}
+
+/* Footer Styling*/
+.footer {
+  grid-area: footer;
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #3c4a3e;
+}
+
+/* Homepage Styling */
+
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 100vh;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  grid-template-areas:
     "logo"
     "objectives"
     "navbar"
     "footer";
 }
 
-.logo {
-    grid-area: logo;
-    align-self: start;
-    justify-self: start;
-    font-size: 1.5rem;
-    margin-top: 5px;
-    margin-left: 5px;
-    
-     
-}
-.logo a {
-    text-decoration: none;
-    color: #0d0e0d;
-}
-
-
 .objectives {
-    grid-area: objectives;
-    align-self: center;
-    justify-self: center;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    color: #3c4a3e;
-    font-weight: 400;
-    font-size: 3.5vw;
-    padding: 5px;
-    text-align: center;
+  grid-area: objectives;
+  align-self: center;
+  justify-self: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: #3c4a3e;
+  font-weight: 400;
+  font-size: 3.5vw;
+  padding: 5px;
+  text-align: center;
 }
-
-
 
 .navbar {
-    grid-area: navbar;
-    display: flex;
-    justify-content: center;
-    list-style: none;
+  grid-area: navbar;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 .link {
-    display: block;
-    width: 14vw;
-    text-decoration: none;
-    color: #7cf49a;
-    border: 5px solid #3c4a3e;
-    border-radius: 15px 50px;
-    margin: 0 30px;
-    font-size: 2.5vw;
-    background-color: #3c4a3e;
-    padding: 10px;
-    text-align: center;
+  display: block;
+  width: 14vw;
+  text-decoration: none;
+  color: #7cf49a;
+  border: 5px solid #3c4a3e;
+  border-radius: 15px 50px;
+  margin: 0 30px;
+  font-size: 2.5vw;
+  background-color: #3c4a3e;
+  padding: 10px;
+  text-align: center;
 }
 
+/* About Styling*/
 
-
-.footer {
-    grid-area: footer;
-    align-self: end;
-    justify-self: center;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #3c4a3e;
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+  grid-template-areas:
+    "logo logo"
+    "left-section right-section"
+    "footer footer";
 }
 
+.left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7cf49a;
+}
 
+.left-section img {
+  width: 25vw;
+  border-radius: 15px 50px;
+  border: solid 5px white;
+  margin-left: 30px;
+}
 
+.right-section {
+  display: flex;
+  background: #7cf49a;
+  font-size: 1.2vw;
+}
 
+.about-h1 {
+  text-align: center;
+  align-self: center;
+  padding: 3px;
+  letter-spacing: epx;
+}
+
+/* Portfolio Styling*/
+
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  grid-template-areas:
+    "logo logo"
+    "works works"
+    "works-wrapper works-wrapper"
+    "footer footer";
+}
+
+.works {
+  grid-area: works;
+  align-self: center;
+  justify-self: center;
+  letter-spacing: 2px;
+  color: #3c4a3e;
+  font-weight: 400;
+  font-size: 5vw;
+  padding: 5px;
+  text-align: center;
+}
+
+.works-wrapper {
+  grid-area: works-wrapper;
+  display: flex;
+  justify-content: center;
+}
+
+.work1 {
+  background-image: url("images/calculator.jpg");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-right: 2vw;
+  position: relative;
+  border-radius: 50px 50px 0 0;
+}
+
+.work1 a,
+.work2 a {
+  display: flex;
+  background: rgb(132, 94, 194, 0.9); /* Black background with 0.5 opacity */
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.work2 {
+  background-image: url("images/habit.jpg");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-left: 2vw;
+  position: relative;
+  border-radius: 50px 50px 0 0;
+}
+
+/* Contact Styling*/
