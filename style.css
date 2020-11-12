@@ -6,6 +6,7 @@
   background: #7cf49a;
 }
 
+/*homepage start*/
 .home-wrapper {
   display: grid;
   height: 100vh;
@@ -57,6 +58,7 @@
 .nav-links li a:active {
   text-transform: uppercase;
 }
+/* homepage end*/
 
 /* about start*/
 .about-wrapper {
@@ -97,8 +99,72 @@
   text-align: justify;
   text-transform: uppercase;
 }
-
 /*about end*/
+.portfolio-wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 3fr 0.2fr;
+  grid-template-areas:
+    "navbar"
+    "works"
+    "footer";
+  gap: 0.2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.works {
+  grid-area: works;
+}
+.works h1 {
+  margin: 0;
+  padding: 1rem;
+  font-size: 4vw;
+  font-weight: 500;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, calc(((80vw - 4rem) / 3)));
+  gap: 1rem;
+  grid-template-rows: auto;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.item a {
+  text-decoration: none;
+}
+.label {
+  font-size: 2vw;
+  line-height: 4vw;
+  padding: 0 1rem;
+  margin: 0;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.6);
+  height: 4vw;
+  transform: translateY(-4vw);
+  margin-bottom: -4vw;
+  text-align: center;
+}
+
+.label:hover,
+.label:active {
+  text-transform: uppercase;
+  background: rgb(253, 255, 50);
+  color: #0d0e0d;
+  font-weight: 700;
+}
+
+/*portfolio end*/
+
 footer {
   grid-area: footer;
   font-size: 1em;
@@ -152,5 +218,24 @@ footer {
 
   .right-section h1 {
     font-size: 5vw;
+  }
+
+  .grid {
+    grid-template-columns: calc(80vw - 4rem);
+  }
+  .works h1 {
+    font-size: 9vw;
+  }
+  .label {
+    font-size: 5.5vw;
+    line-height: 8vw;
+    padding: 0 1rem;
+    margin: 0;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.6);
+    height: 8vw;
+    transform: translateY(-8vw);
+    margin-bottom: -8vw;
+    text-align: center;
   }
 }
