@@ -162,8 +162,83 @@
   color: #0d0e0d;
   font-weight: 700;
 }
-
 /*portfolio end*/
+
+/*Contact start*/
+
+.contact-wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 3fr 0.2fr;
+  grid-template-areas:
+    "navbar"
+    "contact-section"
+    "footer";
+  gap: 0.2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.contact-section {
+  grid-area: contact-section;
+  min-width: 300px;
+  width: 30vw;
+}
+
+#form {
+  margin: 20px 0;
+}
+
+#name,
+#email,
+#comment,
+.btn {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  background: rgb(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+}
+::placeholder {
+  color: white;
+}
+#comment {
+  height: 25vh;
+}
+.btn {
+  transition: background 0.5s;
+}
+.btn:hover,
+.btn:active {
+  text-transform: uppercase;
+  background: rgb(253, 255, 50, 0.7);
+  color: #0d0e0d;
+  font-weight: 700;
+}
+
+.social-media {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.fa {
+  text-align: center;
+  font-size: 40px;
+}
+
+.fa.fa-linkedin-square {
+  color: #0a66c1;
+}
+
+.fa.fa-github {
+  color: #171515;
+}
+
+/*Contact end*/
 
 footer {
   grid-area: footer;
@@ -171,7 +246,7 @@ footer {
 }
 
 /* Responsive*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .nav-links li a {
     font-size: 5vw;
   }
@@ -225,6 +300,8 @@ footer {
   }
   .works h1 {
     font-size: 9vw;
+    margin-top: 30px;
+    margin-bottom: -10px;
   }
   .label {
     font-size: 5.5vw;
