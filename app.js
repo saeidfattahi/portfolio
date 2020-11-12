@@ -3,10 +3,10 @@ const email = document.getElementById("email");
 const comment = document.getElementById("comment");
 const form = document.getElementById("form");
 const errorElement = document.getElementById("error");
-let messages = [];
 
-// to prevent page submitting while null
+// to prevent page from submitting null
 form.addEventListener("submit", (e) => {
+  let messages = [];
   if (name.value === "" || name.value == null) {
     messages.push("Name is REQUIRED");
   }
@@ -15,8 +15,6 @@ form.addEventListener("submit", (e) => {
   }
   if (email.value === "" || email.value == null) {
     messages.push("Email is REQUIRED");
-  } else {
-    messages.push("Your message has been sent.");
   }
   if (messages.length > 0) {
     e.preventDefault();
